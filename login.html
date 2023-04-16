@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style_login.css">
 
   </head>
   <body class="bg-one">
@@ -98,7 +98,7 @@
                           <a href="index.html">
                             <img src="assets/img/home-icon.svg" alt="Home"> Home </a>
                         </li>
-                        <li class="breadcrumb-item" aria-current="page">Register</li>
+                        <li class="breadcrumb-item" aria-current="page">Login</li>
                       </ol>
                     </nav>
                   </div>
@@ -107,121 +107,96 @@
             </div>
           </div>
 
-          <div >
-            <div >
-              <div >
-                <div >
-                  <div >
-                    <div >
-                      <div >
-                        <div >
+          <div class="content">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 offset-md-3">
+                  <div class="account-content">
+                    <div class="align-items-center justify-content-center">
+                      <div class="login-right">
+                        <div class="login-header text-center">
                           <a href="index.html">
                             <img src="assets/img/logo.png" alt="logo" class="img-fluid">
                           </a>
-                          <h3>Join BookIt</h3>
-                          <p>Make the most of your professional life</p>
+                          <h3>Login BookIt</h3>
+                          <p>Make your life easy</p>
                         </div>
-                        <nav >
+                        <nav class="user-tabs mb-4">
                           <ul role="tablist" class="nav nav-pills nav-justified">
-                            <li >
-                              <a href="#developer" data-bs-toggle="tab" >FREELANCER</a>
+                            <li class="nav-item">
+                              <a href="#client" data-bs-toggle="tab" class="nav-link active">CLIENT</a>
                             </li>
-                            <li >
-                              <a href="#company" data-bs-toggle="tab" >COMPANY</a>
+                            <li class="nav-item">
+                              <a href="#vendor" data-bs-toggle="tab" class="nav-link">VENDOR</a>
                             </li>
                           </ul>
                         </nav>
-                        <div >
-                          <div role="tabpanel" id="developer" >
+                        <div class="tab-content pt-0">
+                          <div role="tabpanel" id="client" class="tab-pane fade active show">
                             <form action="onboard-screen.html">
-                              <div >
-                                <input type="email" >
-                                <label>User Name</label>
+                              <div class="form-group form-focus">
+                                <input type="email" class="form-control floating">
+                                <label class="focus-label">Email </label>
                               </div>
-                              <div >
-                                <input type="email" >
-                                <label>Email </label>
+                              <div class="form-group form-focus">
+                                <input type="password" class="form-control floating">
+                                <label class="focus-label">Password</label>
                               </div>
-                              <div>
-                                <input type="password" >
-                                <label>Password</label>
-                              </div>
-                              <div>
-                                <input type="password">
-                                <label>Confirm Password</label>
-                              </div>
-                              <div>
-                                <label>
-                                  <input type="checkbox" name="rem_password">
-                                  <span class="checkmark"></span> You agree to the Kofejob <a href="privacy-policy.html">User Agreement, Privacy Policy,</a> and <a href="privacy-policy.html">Cookie Policy</a>. </label>
-                              </div>
-                              <button type="submit">AGREE TO JOIN</button>
-                              <div>
+                              <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">LOGIN</button>
+                              <div class="login-or">
                                 <p>Or login with</p>
                               </div>
-                              <div>
-                                <div>
-                                  <a href="#"> Twitter</a>
+                              <div class="row social-login">
+                                <div class="col-4">
+                                  <a href="#" class="btn btn-twitter btn-block"> Twitter</a>
                                 </div>
-                                <div>
-                                  <a href="#"> Facebook</a>
+                                <div class="col-4">
+                                  <a href="#" class="btn btn-facebook btn-block"> Facebook</a>
                                 </div>
-                                <div>
-                                  <a href="#"> Google</a>
+                                <div class="col-4">
+                                  <a href="#" class="btn btn-google btn-block"> Google</a>
                                 </div>
                               </div>
                               <div class="row">
-                                <div>
+                                <div class="col-6 text-start">
                                   <a class="forgot-link" href="forgot-password.html">Forgot Password ?</a>
                                 </div>
-                                <div>Already on Kofejob <a href="login.html">Click here</a>
+                                <div class="col-6 text-end dont-have">Already on BookIt <a href="login.html">Click here</a>
                                 </div>
                               </div>
                             </form>
                           </div>
-                          <div role="tabpanel" id="company">
-                            <form action="">
-                              <div>
-                                <input type="email">
-                                <label>User Name</label>
+                          <div role="tabpanel" id="vendor" class="tab-pane fade">
+                            <form action="onboard-screen.html">
+                              <div class="form-group form-focus">
+                                <input type="email" class="form-control floating">
+                                <label class="focus-label">Email </label>
                               </div>
-                              <div>
-                                <input type="email">
-                                <label>Email </label>
+                              <div class="form-group form-focus">
+                                <input type="password" class="form-control floating">
+                                <label class="focus-label">Password</label>
                               </div>
-                              <div>
-                                <input type="password">
-                                <label>Password</label>
-                              </div>
-                              <div>
-                                <input type="password">
-                                <label>Confirm Password</label>
-                              </div>
-                              <div>
-                                <label>
-                                  <input type="checkbox" name="rem_password">
-                                  <span></span> You agree to the Kofejob <a href="privacy-policy.html">User Agreement, Privacy Policy,</a> and <a href="privacy-policy.html">Cookie Policy</a>. </label>
-                              </div>
-                              <button type="submit">Agree TO JOIN</button>
-                              <div>
+            
+                              <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">LOGIN</button>
+                              <div class="login-or">
                                 <p>Or login with</p>
                               </div>
-                              <div>
-                                <div>
-                                  <a href="#"> Twitter</a>
+                              <div class="row form-row social-login">
+                                <div class="col-4">
+                                  <a href="#" class="btn btn-twitter btn-block"> Twitter</a>
                                 </div>
-                                <div>
-                                  <a href="#"> Facebook</a>
+                                <div class="col-4">
+                                  <a href="#" class="btn btn-facebook btn-block"> Facebook</a>
                                 </div>
-                                <div>
-                                  <a href="#"> Google</a>
+                                <div class="col-4">
+                                  <a href="#" class="btn btn-google btn-block"> Google</a>
                                 </div>
                               </div>
-                              <div>
-                                <div>
-                                  <a href="forgot-password.html">Forgot Password ?</a>
+                              <div class="row form-row">
+                                <div class="col-6 text-start">
+                                  <a class="forgot-link" href="forgot-password.html">Forgot Password ?</a>
                                 </div>
-                                <div>Already on Kofejob <a href="login.html">Click here</a>
+                                <div class="col-6 text-end dont-have">Already on BookIt <a href="login.html">Click here</a>
                                 </div>
                               </div>
                             </form>
