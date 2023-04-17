@@ -1,6 +1,6 @@
 
 /*-----------------
-	33. Employer
+	21. Vendor Booking
 -----------------------*/
 
 .paginations {
@@ -107,11 +107,11 @@
     margin: 0 auto 0;
 }
 .projects-details {
-    display: flex;
+    display: block;
     width: 100%; 
 }
 .projects-action {
-	width: 35%;
+	width: 100%;
 	padding-left: 20px;
 }
 .projects-amount {
@@ -187,9 +187,8 @@
     font-size: 14px;
 }
 .project-hire-info {
-	display: flex;
-    width: 55%;
-    align-items: center;
+	display: block;
+    width: 100%;
 }
 .projects-amount.proposals {
 	width: 100%;
@@ -392,4 +391,30 @@
 }
 ul {
     padding: 0;
+}
+
+/*-----------------
+	Responsive
+-----------------------*/
+
+/* Media query for desktop viewport target - minimum width: 575px */
+
+@media only screen and (min-width:575px) {
+    .projects-action {
+        width: 35%;
+        padding-left: 20px;
+    }
+    .project-hire-info {
+        display: flex;
+        width: 55%;
+        align-items: center;
+    }
+}
+
+/* Media query for desktop viewport target - minimum width: 991px */
+
+@media only screen and (min-width:991px) {
+    .projects-details {
+        display: flex;
+    }
 }
