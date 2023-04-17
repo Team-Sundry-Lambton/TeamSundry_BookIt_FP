@@ -48,9 +48,9 @@
 }
 .category-content h4 {
 	font-weight: 600;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 30px;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	color: #4F639D;
 	margin-bottom: 0;
 }
