@@ -163,6 +163,10 @@
 	color: #4F639D;
 }
 
+/*-----------------
+	Responsive
+-----------------------*/
+
 @media only screen and (max-width: 1199.98px) {
 
     .project-hire-info {
