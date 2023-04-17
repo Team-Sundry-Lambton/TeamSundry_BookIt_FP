@@ -1,0 +1,68 @@
+/*-----------------
+	Categories List
+-----------------------*/
+
+.categories {
+	position: relative;
+    padding: 80px 0;
+	background: #fbfbfb;
+}
+.category-item {
+	background: #fff;
+	margin-bottom: 25px;
+	width: 100%;
+	border: 1px solid #EBEBEB;
+	box-shadow: 0px 4px 48px rgba(160, 160, 160, 0.1);
+	border-radius: 6px;
+}
+.procategoryject-item:hover .category-icon {
+	border-color: #FFCCC1;
+}
+.category-img {
+	overflow: hidden;
+    padding: 3px 3px 0 3px;
+	border-radius: 6px;
+}
+.category-img img {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    transform: translateZ(0);
+    -moz-transition: all 2000ms cubic-bezier(.19,1,.22,1) 0ms;
+    -ms-transition: all 2000ms cubic-bezier(.19,1,.22,1) 0ms;
+    -o-transition: all 2000ms cubic-bezier(.19,1,.22,1) 0ms;
+    -webkit-transition: all 2000ms cubic-bezier(.19,1,.22,1) 0ms;
+    transition: all 2000ms cubic-bezier(.19,1,.22,1) 0ms;
+    width: 100%;
+	border-radius: 6px;
+}
+.category-img:hover img {
+    -webkit-transform: scale(1.15);
+    -moz-transform: scale(1.15);
+    transform: scale(1.15);
+}
+
+.category-content {
+	margin: 0 auto;
+	text-align: center;
+	width: 42%;
+}
+.category-content h4 {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #4F639D;
+	margin-bottom: 0;
+}
+.category-content h5 {
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 21px;
+	margin-bottom: 0;
+}
+.category-content h5 a {
+	color: #353535;
+}
+.category-content h5 a:hover {
+	color: #4F639D;
+}
