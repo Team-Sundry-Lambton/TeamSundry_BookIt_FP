@@ -1,0 +1,105 @@
+/*-----------------
+	8. Contact
+-----------------------*/
+
+.right-contact-social-icon {
+    background: linear-gradient(to top right, #2c4895 -5%, #a0b2e1 100%);
+}
+
+.contact-us {
+    background-color: #ffffff;
+    padding: 120px 0px;
+}
+
+.contact-inner {
+    background-color: #fff;
+    position: relative;
+    box-shadow: 20px 22px 44px #cccc;
+    border-radius: 25px;
+}
+
+.contact-form-wrapper {
+    padding: 60px 340px 90px 100px;
+}
+
+.right-contact-social-icon {
+    height: 100%;
+}
+
+.contact-form-wrapper form {
+    margin-top: 10%;
+}
+
+.contact-form-wrapper .form-control {
+    border-radius: 0px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.contact-form-wrapper .form-control:focus {
+    box-shadow: none;
+    outline: none;
+    border-bottom: 2px solid #1325e8;
+}
+
+.contact-form-wrapper .form-control::placeholder {
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.contact-info-sec {
+    position: absolute;
+    background-color: #2d2d2d;
+    right: 1px;
+    top: 18%;
+    height: 340px;
+    width: 340px;
+    padding: 40px;
+    border-radius: 25px 0 0 25px;
+    color: #fff;
+}
+
+.contact-info-sec h4 {
+    letter-spacing: 1px;
+    padding-bottom: 15px;
+}
+
+.info-single {
+    margin: 30px 0px;
+}
+
+.info-single i {
+    margin-right: 15px;
+}
+
+.info-single span {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+button.contact-form-submit {
+    background: linear-gradient(to top right, #677dbc -5%, #3c58a0 100%);
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 35px;
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.social-item-inner li {
+    list-style: none;
+}
+
+.social-item-inner li a {
+    color: #fff;
+    margin: 0px 15px;
+    font-size: 14px;
+}
+
+.social-item-inner {
+    padding-bottom: 10px;
+}
