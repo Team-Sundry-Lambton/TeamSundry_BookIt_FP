@@ -1,0 +1,20 @@
+
+.title-content {
+	padding: 30px;
+}
+.title-detail {
+	height: 48px;
+}
+
+.next-btn {
+	background: #4F639D;
+	border-radius: 90px;
+	border-color: #4F639D;
+	font-weight: bold;
+    font-size: 17px;
+    padding: 13px 50px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+
