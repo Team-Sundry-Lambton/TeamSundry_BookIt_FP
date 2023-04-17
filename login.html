@@ -122,28 +122,18 @@
                           <h3>Login BookIt</h3>
                           <p>Make your life easy</p>
                         </div>
-                        <nav class="user-tabs mb-4">
-                          <ul role="tablist" class="nav nav-pills nav-justified">
-                            <li class="nav-item">
-                              <a href="#client" data-bs-toggle="tab" class="nav-link active">CLIENT</a>
-                            </li>
-                            <li class="nav-item">
-                              <a href="#vendor" data-bs-toggle="tab" class="nav-link">VENDOR</a>
-                            </li>
-                          </ul>
-                        </nav>
                         <div class="tab-content pt-0">
                           <div role="tabpanel" id="client" class="tab-pane fade active show">
-                            <form action="onboard-screen.html">
+                            <form id="login-form">
                               <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
+                                <input type="email" class="form-control floating" id="email" required>
                                 <label class="focus-label">Email </label>
                               </div>
                               <div class="form-group form-focus">
-                                <input type="password" class="form-control floating">
+                                <input type="password" class="form-control floating" id="password" required>
                                 <label class="focus-label">Password</label>
                               </div>
-                              <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">LOGIN</button>
+                              <button class="btn btn-primary btn-block btn-lg login-btn" type="button" onClick="login()">LOGIN</button>
                               <div class="login-or">
                                 <p>Or login with</p>
                               </div>
@@ -159,41 +149,6 @@
                                 </div>
                               </div>
                               <div class="row">
-                                <div class="col-6 text-start">
-                                  <a class="forgot-link" href="forgot-password.html">Forgot Password ?</a>
-                                </div>
-                                <div class="col-6 text-end dont-have">New to BookIt <a href="register.html">Register</a>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                          <div role="tabpanel" id="vendor" class="tab-pane fade">
-                            <form action="onboard-screen.html">
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">Email </label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="password" class="form-control floating">
-                                <label class="focus-label">Password</label>
-                              </div>
-            
-                              <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">LOGIN</button>
-                              <div class="login-or">
-                                <p>Or login with</p>
-                              </div>
-                              <div class="row form-row social-login">
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-twitter btn-block"> Twitter</a>
-                                </div>
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-facebook btn-block"> Facebook</a>
-                                </div>
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-google btn-block"> Google</a>
-                                </div>
-                              </div>
-                              <div class="row form-row">
                                 <div class="col-6 text-start">
                                   <a class="forgot-link" href="forgot-password.html">Forgot Password ?</a>
                                 </div>

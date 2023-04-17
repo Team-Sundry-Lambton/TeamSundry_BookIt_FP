@@ -39,7 +39,7 @@
                 </a>
               </div>
               <ul class="main-nav">
-                <li class="active">
+                <li class="">
                   <a href="index.html">Home 
                   </a>
                 </li>
@@ -133,108 +133,52 @@
                           </nav>
                         <div class="tab-content pt-0">
                           <div role="tabpanel" id="client" class="tab-pane fade active show">
-                            <form action="onboard-screen.html">
+                            <form id="register-form">
                               <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
+                                <input type="text" id="firstName" class="form-control floating" required>
                                 <label class="focus-label">First Name</label>
                               </div>
                               <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
+                                <input type="text" id="lastName" class="form-control floating" required>
                                 <label class="focus-label">Last Name</label>
                               </div>
                               <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">Email </label>
+                                <input type="email" id="email" class="form-control floating" required>
+                                <label class="focus-label">Email</label>
                               </div>
                               <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">Phone Number </label>
+                                <input type="number" id="phoneNumber" class="form-control floating" required>
+                                <label class="focus-label">Phone Number</label>
                               </div>
                               <div class="form-group form-focus">
-                                <input type="password" class="form-control floating">
+                                <input type="password" id="password" class="form-control floating" required>
                                 <label class="focus-label">Password</label>
                               </div>
                               <div class="form-group form-focus mb-0">
-                                <input type="password" class="form-control floating">
+                                <input type="password" id="confirmPassword" class="form-control floating" required>
                                 <label class="focus-label">Confirm Password</label>
                               </div>
-                              <div class="dont-have">
-                                <label class="custom_check">
-                                  <input type="checkbox" name="rem_password">
-                                  <span class="checkmark"></span> You agree to the BookIt <a href="privacy-policy.html">User Agreement, Privacy Policy,</a> and <a href="privacy-policy.html">Cookie Policy</a>. </label>
-                              </div>
-                              <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">REGISTER</button>
-                              <div class="login-or">
-                                <p>Or signup with</p>
-                              </div>
-                              <div class="row social-login">
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-twitter btn-block"> Twitter</a>
-                                </div>
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-facebook btn-block"> Facebook</a>
-                                </div>
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-google btn-block"> Google</a>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-6 text-end dont-have">Already on BookIt <a href="login.html">Login</a>
-                                </div>
-                              </div>
+                              <input type="hidden" id="isClient" class="form-control floating" value="true">
+                              <button class="btn btn-primary btn-block btn-lg login-btn" type="button" onClick="register()">REGISTER</button>
                             </form>
                           </div>
-                          <div role="tabpanel" id="vendor" class="tab-pane fade">
-                            <form action="onboard-screen.html">
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">First Name</label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">Last Name</label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">Email </label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">Phone Number </label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="password" class="form-control floating">
-                                <label class="focus-label">Password</label>
-                              </div>
-                              <div class="form-group form-focus mb-0">
-                                <input type="password" class="form-control floating">
-                                <label class="focus-label">Confirm Password</label>
-                              </div>
-                              <div class="dont-have">
-                                <label class="custom_check">
-                                  <input type="checkbox" name="rem_password">
-                                  <span class="checkmark"></span> You agree to the BookIt <a href="privacy-policy.html">User Agreement, Privacy Policy,</a> and <a href="privacy-policy.html">Cookie Policy</a>. </label>
-                              </div>
-                              <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">REGISTER</button>
-                              <div class="login-or">
-                                <p>Or signup with</p>
-                              </div>
-                              <div class="row form-row social-login">
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-twitter btn-block"> Twitter</a>
-                                </div>
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-facebook btn-block"> Facebook</a>
-                                </div>
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-google btn-block"> Google</a>
-                                </div>
-                              </div>
-                              <div class="row form-row">
-                                <div class="col-6 text-end dont-have">Already on BookIt <a href="login.html">Login</a>
-                                </div>
-                              </div>
-                            </form>
+                          <div class="login-or">
+                            <p>Or signup with</p>
+                          </div>
+                          <div class="row form-row social-login">
+                            <div class="col-4">
+                              <a href="#" class="btn btn-twitter btn-block"> Twitter</a>
+                            </div>
+                            <div class="col-4">
+                              <a href="#" class="btn btn-facebook btn-block"> Facebook</a>
+                            </div>
+                            <div class="col-4">
+                              <a href="#" class="btn btn-google btn-block"> Google</a>
+                            </div>
+                          </div>
+                          <div class="row form-row">
+                            <div class="col-6 text-end dont-have">Already on BookIt <a href="login.html">Login</a>
+                            </div>
                           </div>
                         </div>
                       </div>
