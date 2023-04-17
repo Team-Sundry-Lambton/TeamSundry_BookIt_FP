@@ -103,3 +103,17 @@ button.contact-form-submit {
 .social-item-inner {
     padding-bottom: 10px;
 }
+.map-section{
+    padding: 50px 0px;
+    background: #fff5f3;
+}
+.map-inner h2, .map-inner p{
+    text-align: center
+}
+
+.map-bind{
+   margin-top: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px dotted #d7d7d7;
+}
