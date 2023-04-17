@@ -99,3 +99,17 @@ if($(window).width() <= 991){
     function loadUserPassword(){
         document.getElementById('oldPassword').value = localStorage.getItem('password');
     }
+
+    function updatePassword() {
+        const password = document.getElementById("newPassword").value;
+        const confirmPassword = document.getElementById("confirmNewPassword").value;
+
+        if(password === confirmPassword) {
+            localStorage.setItem("password", password);
+            localStorage.setItem("confirmPassword", confirmPassword);
+            if (confirm("Thank you, "+ localStorage.getItem('firstName') + "! updated successfully!")) {
+            }
+        } else {
+            alert("Passwords are not match! Please try again!");
+        }
+	} 
