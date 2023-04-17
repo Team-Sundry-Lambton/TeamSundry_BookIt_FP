@@ -95,3 +95,7 @@ if($(window).width() <= 991){
         document.getElementById('email').value = localStorage.getItem('email');
         document.getElementById('phoneNumber').value = localStorage.getItem('phoneNumber');
     }
+
+    function loadUserPassword(){
+        document.getElementById('oldPassword').value = localStorage.getItem('password');
+    }
