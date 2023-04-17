@@ -8,9 +8,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/style_login.css">
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/style_contact.css">
   </head>
   <body class="bg-one">
     
@@ -87,163 +86,99 @@
             </ul>
           </nav>
         </header>
+      
+        <!-- CHANGE CONTENT HERE -->
+
         <div class="bread-crumb-bar">
-            <div class="container">
-              <div class="row align-items-center inner-banner">
-                <div class="col-md-12 col-12 text-center">
-                  <div class="breadcrumb-list">
-                    <nav aria-label="breadcrumb" class="page-breadcrumb">
-                      <ol class="breadcrumb">
-                        <li class="breadcrumb-item">
-                          <a href="index.html">
-                            <img src="assets/img/home-icon.svg" alt="Home"> Home </a>
-                        </li>
-                        <li class="breadcrumb-item" aria-current="page">Register</li>
-                      </ol>
-                    </nav>
-                  </div>
+          <div class="container">
+            <div class="row align-items-center inner-banner">
+              <div class="col-md-12 col-12 text-center">
+                <div class="breadcrumb-list">
+                  <nav aria-label="breadcrumb" class="page-breadcrumb">
+                    <ol class="breadcrumb">
+                      <li class="breadcrumb-item">
+                        <a href="index.html">
+                          <img src="assets/img/home-icon.svg" alt="Home"> Home </a>
+                      </li>
+                      <li class="breadcrumb-item" aria-current="page">Contact Us</li>
+                    </ol>
+                  </nav>
                 </div>
               </div>
             </div>
           </div>
-   
-          <div class="content">
+        </div>
+
+        <section class="contact-us">
             <div class="container">
-              <div class="row">
-                <div class="col-md-6 offset-md-3">
-                  <div class="account-content">
-                    <div class="align-items-center justify-content-center">
-                      <div class="login-right">
-                        <div class="login-header text-center">
-                          <a href="index.html">
-                            <img src="assets/img/logo.png" alt="logo" class="img-fluid">
-                          </a>
-                          <h3>Join BookIt</h3>
-                          <p>Make your life easy</p>
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="contact-inner">
+                            <div class="row">
+                                <div class="col-md-9">
+                                    <div class="contact-form-inner">
+                                        <div class="contact-form-wrapper section-header">
+                                            <h2 class="header-title">Contact Us</h2>
+                                            <p>Feel Free to contact us any time. We will get back to you as soon as we can!</p>
+                                            <form action="#">
+                                            <input type="text" class="form-control form-group" placeholder="Name" required />
+                                            <input type="email" class="form-control form-group" placeholder="Email" required/>
+                                            <textarea class="form-control form-group" placeholder="Message" required></textarea>
+                                            <button type="submit" class="contact-form-submit">Send</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="right-contact-social-icon d-flex align-items-end">
+                                       <div class="social-item-inner d-flex">
+                                          <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                                          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                       </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contact-info-sec">
+                                <h4>Contact Info</h4>
+                                <div class="d-flex info-single align-items-center">
+                                    <i class="fas fa-headset"></i>
+                                    <span>+91 XXXXXXXXXX</span>
+                                </div>
+                                <div class="d-flex info-single align-items-center">
+                                    <i class="fas fa-envelope-open-text"></i>
+                                    <span>teamsundry@gmail.com</span>
+                                </div>
+                                <div class="d-flex info-single align-items-center">
+                                    <i class="fas fa-map-marked-alt"></i>
+                                    <span>7805+ Vendors and 997,98+ Bookings across nearby areas.</span>
+                                </div>
+                
+                            </div>
                         </div>
-                        <nav class="user-tabs mb-4">
-                            <ul role="tablist" class="nav nav-pills nav-justified">
-                              <li class="nav-item">
-                                <a href="#client" data-bs-toggle="tab" class="nav-link active">CLIENT</a>
-                              </li>
-                              <li class="nav-item">
-                                <a href="#vendor" data-bs-toggle="tab" class="nav-link">VENDOR</a>
-                              </li>
-                            </ul>
-                          </nav>
-                        <div class="tab-content pt-0">
-                          <div role="tabpanel" id="client" class="tab-pane fade active show">
-                            <form action="onboard-screen.html">
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">First Name</label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">Last Name</label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">Email </label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">Phone Number </label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="password" class="form-control floating">
-                                <label class="focus-label">Password</label>
-                              </div>
-                              <div class="form-group form-focus mb-0">
-                                <input type="password" class="form-control floating">
-                                <label class="focus-label">Confirm Password</label>
-                              </div>
-                              <div class="dont-have">
-                                <label class="custom_check">
-                                  <input type="checkbox" name="rem_password">
-                                  <span class="checkmark"></span> You agree to the BookIt <a href="privacy-policy.html">User Agreement, Privacy Policy,</a> and <a href="privacy-policy.html">Cookie Policy</a>. </label>
-                              </div>
-                              <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">REGISTER</button>
-                              <div class="login-or">
-                                <p>Or signup with</p>
-                              </div>
-                              <div class="row social-login">
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-twitter btn-block"> Twitter</a>
-                                </div>
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-facebook btn-block"> Facebook</a>
-                                </div>
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-google btn-block"> Google</a>
-                                </div>
-                              </div>
-                              <div class="row">
-                                <div class="col-6 text-end dont-have">Already on BookIt <a href="login.html">Login</a>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                          <div role="tabpanel" id="vendor" class="tab-pane fade">
-                            <form action="onboard-screen.html">
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">First Name</label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">Last Name</label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">Email </label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="email" class="form-control floating">
-                                <label class="focus-label">Phone Number </label>
-                              </div>
-                              <div class="form-group form-focus">
-                                <input type="password" class="form-control floating">
-                                <label class="focus-label">Password</label>
-                              </div>
-                              <div class="form-group form-focus mb-0">
-                                <input type="password" class="form-control floating">
-                                <label class="focus-label">Confirm Password</label>
-                              </div>
-                              <div class="dont-have">
-                                <label class="custom_check">
-                                  <input type="checkbox" name="rem_password">
-                                  <span class="checkmark"></span> You agree to the BookIt <a href="privacy-policy.html">User Agreement, Privacy Policy,</a> and <a href="privacy-policy.html">Cookie Policy</a>. </label>
-                              </div>
-                              <button class="btn btn-primary btn-block btn-lg login-btn" type="submit">REGISTER</button>
-                              <div class="login-or">
-                                <p>Or signup with</p>
-                              </div>
-                              <div class="row form-row social-login">
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-twitter btn-block"> Twitter</a>
-                                </div>
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-facebook btn-block"> Facebook</a>
-                                </div>
-                                <div class="col-4">
-                                  <a href="#" class="btn btn-google btn-block"> Google</a>
-                                </div>
-                              </div>
-                              <div class="row form-row">
-                                <div class="col-6 text-end dont-have">Already on BookIt <a href="login.html">Login</a>
-                                </div>
-                              </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </section>
+
+        <section class="map-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="map-inner section-header">
+                            <h2 class="header-title">Find Us on Google Map</h2>
+                            <p>Find Us on Google Map and Never Get Lost Again: Our Accurate Location Pinpointed on the Map, Detailed Directions, and Nearby Points of Interest to Help You Easily Navigate to Our Address.</p>
+                            <div class="map-bind">
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2880.9811717250736!2d-79.33869012386081!3d43.7732496710967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4d3bca1a3f78f%3A0x815365ed6c3b957e!2sLambton%20College%20In%20Toronto!5e0!3m2!1sen!2sca!4v1681678446381!5m2!1sen!2sca" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- END | CHANGE CONTENT -->
 
       <footer class="footer footer-four">
         <div class="footer-top">
