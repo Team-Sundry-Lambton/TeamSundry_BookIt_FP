@@ -17,3 +17,28 @@
     align-items: center;
     color: #fff;
 }
+.section.about {
+    margin: 5%;
+    box-shadow: 0px 0px 10px 2px rgb(233 234 238);
+    border-radius: 10px;
+    padding: 20px;
+}
+.about-content p {
+    text-align: justify;
+}
+
+.section.about .about-img {
+    display: none;
+}
+
+/*-----------------
+	Responsive
+-----------------------*/
+
+/* Media query for desktop viewport target - minimum width: 991px */
+
+@media only screen and (min-width:991px) {
+    .section.about .about-img {
+        display: block;
+    }
+}
