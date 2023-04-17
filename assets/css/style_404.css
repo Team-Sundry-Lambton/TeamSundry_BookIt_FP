@@ -1,0 +1,15 @@
+/*-----------------
+	24. 404 page
+-----------------------*/
+
+section.not-found-page {
+    padding: 160px 0px;
+}
+.text-wrapper {
+    margin-top: 30px;
+}
+
+.text-wrapper p {
+    margin-bottom: 0;
+    font-weight: 500;
+}
