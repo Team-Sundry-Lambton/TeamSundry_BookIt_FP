@@ -19,7 +19,7 @@
 }
 
 .contact-form-wrapper {
-    padding: 60px 340px 90px 100px;
+    padding: 40px;
 }
 
 .right-contact-social-icon {
@@ -57,6 +57,7 @@
     padding: 40px;
     border-radius: 25px 0 0 25px;
     color: #fff;
+    display: none;
 }
 
 .contact-info-sec h4 {
@@ -116,4 +117,19 @@ button.contact-form-submit {
     border-radius: 30px;
     overflow: hidden;
     border: 1px dotted #d7d7d7;
+}
+
+/*-----------------
+	Responsive
+-----------------------*/
+
+/* Media query for desktop viewport target - minimum width: 991px */
+
+@media only screen and (min-width:991px) {
+    .contact-info-sec {
+        display: block;
+    }
+    .contact-form-wrapper {
+        padding: 60px 200px 60px 80px;
+    }
 }
