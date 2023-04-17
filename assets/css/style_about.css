@@ -1,0 +1,44 @@
+/*-----------------
+	7. About
+-----------------------*/
+
+.about-banner {
+    background: linear-gradient(rgb(103 125 166 / 74%), rgb(65 83 139)), url(../img/about-banner.jpg);
+    height: 180px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 2px 0px #000;
+}
+.about-banner h1 {
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.section.about {
+    margin: 5%;
+    box-shadow: 0px 0px 10px 2px rgb(233 234 238);
+    border-radius: 10px;
+    padding: 20px;
+}
+.about-content p {
+    text-align: justify;
+}
+
+.section.about .about-img {
+    display: none;
+}
+
+/*-----------------
+	Responsive
+-----------------------*/
+
+/* Media query for desktop viewport target - minimum width: 991px */
+
+@media only screen and (min-width:991px) {
+    .section.about .about-img {
+        display: block;
+    }
+}
