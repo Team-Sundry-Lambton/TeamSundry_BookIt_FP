@@ -27,6 +27,17 @@ if($(window).width() <= 991){
 	init();
 	}
 
+    const clientTab = document.querySelector('.nav-link.active');
+    const vendorTab = document.querySelector('.nav-link:not(.active)');
+    const isClientInput = document.getElementById('isClient');
+    
+    clientTab.addEventListener('click', function() {
+        isClientInput.value = 'true';
+    });
+    
+    vendorTab.addEventListener('click', function() {
+        isClientInput.value = 'false';
+    });
 
     function register() {
 		const isClient = document.getElementById("isClient").value;
@@ -56,10 +67,10 @@ if($(window).width() <= 991){
     function login() {
         const email = document.getElementById("email").value;
           const password = document.getElementById("password").value;
-
+            alert(localStorage.getItem('isClient'));
           if(email === localStorage.getItem('email')) {
               if(password === localStorage.getItem('password')) {
-                  var url = localStorage.getItem('isClient')? "client-profile.html" : "vendor-profile.html";
+                  var url = localStorage.getItem('isClient') === "true" ? "client-profile.html" : "vendor-profile.html";
                   window.location.href = url;
                 } else {
                   alert("Wrong password! Please try again!");
