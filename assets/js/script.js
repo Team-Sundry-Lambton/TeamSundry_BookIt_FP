@@ -26,3 +26,61 @@ if($(window).width() <= 991){
 	// Sidebar Initiate
 	init();
 	}
+
+
+    function register() {
+		const isClient = document.getElementById("isClient").value;
+        const firstName = document.getElementById("firstName").value;
+        const lastName = document.getElementById("lastName").value;
+        const email = document.getElementById("email").value;
+        const phoneNumber = document.getElementById("phoneNumber").value;
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirmPassword").value;
+
+        if(password === confirmPassword) {
+            localStorage.setItem("isClient", isClient);
+            localStorage.setItem("firstName", firstName);
+            localStorage.setItem("lastName", lastName);
+            localStorage.setItem("email", email);
+            localStorage.setItem("phoneNumber", phoneNumber);
+            localStorage.setItem("password", password);
+            localStorage.setItem("confirmPassword", confirmPassword);
+            if (confirm("Thank you, "+ localStorage.getItem('firstName') + "! Register successfully!")) {
+                window.location.href = "login.html";
+            }
+        } else {
+            alert("Passwords are not match! Please try again!");
+        }
+	} 
+
+    function login() {
+        const email = document.getElementById("email").value;
+          const password = document.getElementById("password").value;
+
+          if(email === localStorage.getItem('email')) {
+              if(password === localStorage.getItem('password')) {
+                  var url = localStorage.getItem('isClient')? "client-profile.html" : "vendor-profile.html";
+                  window.location.href = url;
+                } else {
+                  alert("Wrong password! Please try again!");
+              }
+          } else {
+              alert("User is not existed! Please try again!");
+          }
+    }
+
+    function logout() {
+        if (confirm("Hi " + localStorage.getItem('firstName') + ", are you sure you want to logout?")) {
+            localStorage.clear();
+            window.location.href = "login.html";
+        }
+    }
+
+    function loadUser(){
+        document.getElementById('topbarName').innerHTML = localStorage.getItem('firstName') + " " + localStorage.getItem('lastName');
+        document.getElementById('lblName').innerHTML = localStorage.getItem('firstName') + " " + localStorage.getItem('lastName');
+        document.getElementById('firstName').value = localStorage.getItem('firstName');
+        document.getElementById('lastName').value = localStorage.getItem('lastName');
+        document.getElementById('email').value = localStorage.getItem('email');
+        document.getElementById('phoneNumber').value = localStorage.getItem('phoneNumber');
+    }
