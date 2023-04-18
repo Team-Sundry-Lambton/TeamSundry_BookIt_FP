@@ -233,3 +233,34 @@ if($(window).width() <= 991){
 		$(this).parents('.form-focus').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
 		}).trigger('blur');
 	}
+
+    function validateContactForm(){
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value;
+        const emailRegex = /\S+@\S+\.\S+/;
+
+        if (name.trim() === '') {
+            alert('Please enter name.');
+            return false;
+        }
+
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return false;
+        }
+
+        if (message.trim() === '') {
+            alert('Please enter a message.');
+            return false;
+        }
+
+        return true;
+    }
+
+    function sendEnquiry() {
+        if(validateContactForm()){
+            alert("Thank you for contacting us! We\'ll get back to you soon! ");
+        }
+    }
+
