@@ -44,16 +44,69 @@ if($(window).width() <= 991){
         });
     }
 
-    function register() {
-		const isClient = document.getElementById("isClient").value;
+    function validateRegister(){
         const firstName = document.getElementById("firstName").value;
         const lastName = document.getElementById("lastName").value;
         const email = document.getElementById("email").value;
         const phoneNumber = document.getElementById("phoneNumber").value;
         const password = document.getElementById("password").value;
         const confirmPassword = document.getElementById("confirmPassword").value;
+        const emailRegex = /\S+@\S+\.\S+/;
+        const phonePattern = /^\d{10}$/;
+        const passwordRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
 
-        if(password === confirmPassword) {
+        if (firstName.trim() === '') {
+            alert('Please enter first name.');
+            return false;
+        }
+
+        if (lastName.trim() === '') {
+            alert('Please enter last name.');
+            return false;
+        }
+
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return false;
+        }
+
+        if (!phonePattern.test(phoneNumber)) {
+            alert('Please enter a valid phone number.');
+            return false;
+        }
+
+        if (password.trim() === '') {
+            alert('Please enter a password.');
+            return false;
+        }
+
+        if (!passwordRegex.test(password)) {
+            alert('Please enter a valid password. Your password must contain at least one uppercase letter, one lowercase letter, one digit, and be at least 8 characters long.');
+            return false;
+        }
+
+        if (confirmPassword.trim() === '') {
+            alert('Please confirm password.');
+            return false;
+        }
+
+        if(password != confirmPassword) {
+            alert("Passwords do not match! Please try again!");
+            return false;
+        }
+
+        return true;
+    }
+
+    function register() {
+        if (validateRegister()){
+            const isClient = document.getElementById("isClient").value;
+            const firstName = document.getElementById("firstName").value;
+            const lastName = document.getElementById("lastName").value;
+            const email = document.getElementById("email").value;
+            const phoneNumber = document.getElementById("phoneNumber").value;
+            const password = document.getElementById("password").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
             localStorage.setItem("isClient", isClient);
             localStorage.setItem("firstName", firstName);
             localStorage.setItem("lastName", lastName);
@@ -61,11 +114,9 @@ if($(window).width() <= 991){
             localStorage.setItem("phoneNumber", phoneNumber);
             localStorage.setItem("password", password);
             localStorage.setItem("confirmPassword", confirmPassword);
-            if (confirm("Thank you, "+ localStorage.getItem('firstName') + "! Register successfully!")) {
+            if (confirm("Thank you, "+ localStorage.getItem('firstName') + "! You are successfully registered!")) {
                 window.location.href = "login.html";
             }
-        } else {
-            alert("Passwords are not match! Please try again!");
         }
 	} 
 
@@ -75,8 +126,8 @@ if($(window).width() <= 991){
         const emailRegex = /\S+@\S+\.\S+/;
 
         if (!emailRegex.test(email)) {
-        alert('Please enter a valid email address.');
-        return false;
+            alert('Please enter a valid email address.');
+            return false;
         }
 
         if (password.trim() === '') {
