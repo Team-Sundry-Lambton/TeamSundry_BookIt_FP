@@ -1215,20 +1215,7 @@
 .note-editor.note-frame .note-status-output {
 	display: none;
 }
-.dashboard-page .content {
-    padding: 144px 0 30px;
-}
-.dashboard-page .content-page {
-    padding: 60px 0 30px;
-}
-.dashboard-page .header {
-	border-bottom: 1px solid #e3e3e3;
-}
-.dashboard-page .footer .container {
-	max-width: 100%;
-	padding-left: 30px;
-	padding-right: 30px;
-}
+
 .list-pagination {
     margin-bottom: 0;
     float: right;
@@ -1273,9 +1260,7 @@ table.dataTable {
 .off-address a {
 	color: #fff;
 }
-body.chat-page {
-	overflow-y: hidden;
-}
+
 .invoice-id {
 	color: #FF3115;
 }
