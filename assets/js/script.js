@@ -26,19 +26,6 @@ if($(window).width() <= 991){
 	// Sidebar Initiate
 	init();
 	}
-
-    const clientTab = document.querySelector('.nav-link.active');
-    const vendorTab = document.querySelector('.nav-link:not(.active)');
-    const isClientInput = document.getElementById('isClient');
-    
-    clientTab.addEventListener('click', function() {
-        isClientInput.value = 'true';
-    });
-    
-    vendorTab.addEventListener('click', function() {
-        isClientInput.value = 'false';
-    });
-
     function register() {
 		const isClient = document.getElementById("isClient").value;
         const firstName = document.getElementById("firstName").value;
@@ -113,3 +100,29 @@ if($(window).width() <= 991){
             alert("Passwords are not match! Please try again!");
         }
 	} 
+
+
+
+    // GENERATE HEADER
+    const headerContainer = document.getElementById("header-container");
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+        headerContainer.innerHTML = xhr.responseText;
+        }
+    };
+    xhr.open("GET", "common/header.html", true);
+    xhr.send();
+
+    // GENERATE FOOTER
+    const footer = document.getElementById("footer");
+    const xhrs = new XMLHttpRequest();
+    xhrs.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            footer.innerHTML = xhrs.responseText;
+        }
+    };
+    xhrs.open("GET", "common/footer.html", true);
+    xhrs.send();
+
+    
