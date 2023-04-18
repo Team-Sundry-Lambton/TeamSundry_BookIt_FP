@@ -14,10 +14,7 @@
     <body class="home-page bg-one">
 
         <div class="main-wrapper">
-
           <div id="header-container"></div>
-
-
           <div class="bread-crumb-bar">
             <div class="container">
               <div class="row align-items-center inner-banner">
@@ -39,122 +36,74 @@
           </div>
 
           <div class="content">
-              <div>
-                  <div>
-                      <div>
-                          <div>
-                              <form action="">
-
-                                  <div>
-                                      <div class="title-content">
-                                          <div class="title-detail">
-                                              <h3>Service Title</h3>
-                                              <div class="form-group">
-                                                  <input type="text" class="form-control" placeholder="Enter Service title">
-                                              </div>
-                                          </div>
-                                      </div>
-
-                                      <div class="title-content">
-                                        <div class="title-detail">
-                                          <h3>Category Type</h3>
-                                          <div class="form-group">
-                                            <select class="form-control select">
-                                              <option value="0">Select</option>
-                                              <option value="1">Accounting</option>
-                                              <option value="2">Beauty And Wellness</option>
-                                              <option value="3">Cleaning</option>
-                                              <option value="4">Electrical</option>
-                                              <option value="5">Fitness</option>
-                                              <option value="6">Interior Design</option>
-                                              <option value="7">Logistics</option>
-                                              <option value="8">Pest Control</option>
-                                              <option value="9">Pet Services</option>
-                                              <option value="10">Plumbing</option>
-                                              <option value="11">Repair</option>
-                                              <option value="12">Tutoring</option>
-                                            </select>
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      <div class="title-content">
-                                        <div class="title-detail">
-                                            <h3>Price</h3>
-                                            <div class="form-group">
-                                                <input type="number" class="form-control" placeholder="$ Price *">
-                                            </div>
-                                        </div>
-                                      </div>
-
-                                      <div class="title-content">
-                                        <div class="title-detail">
-                                          <h3>Pricing Type</h3>
-                                          <div class="form-group">
-                                            <select class="form-control select">
-                                              <option value="0">Select</option>
-                                              <option value="1">Per-Hour</option>
-                                              <option value="2">Per-day</option>
-                                              <option value="3">As per service</option>
-                                            </select>
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      <div class="title-content">
-                                        <div class="title-detail">
-                                            <h3>Location</h3>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Enter Your Location Address">
-                                            </div>
-                                        </div>
-                                      </div>     
-
-                                      <div class="title-content">
-                                        <div class="title-detail">
-                                            <h3>Cancellation Policy</h3>
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="url">
-                                            </div>
-                                        </div>
-                                      </div> 
-
-                                      <div class="title-content">
-                                        <div class="title-detail">
-                                          <h3>Add Images</h3>
-                                          <div class="custom-file">
-                                            <input type="file" class="custom-file-input">
-                                            <label class="custom-file-label"></label>
-                                          </div>
-                                          <p>Size of the Document should be Below 2MB</p>
-                                        </div>
-                                      </div>
-
-                                      <div class="title-content">
-                                        <div class="title-detail">
-                                          <h3>Write Description of Service </h3>
-                                          <div class="form-group">
-                                            <textarea class="form-control" rows="5"></textarea>
-                                          </div>
-                                        </div>
-                                      </div>
-
-                                      <div>
-                                        <div>
-                                          <div class="btn-item">
-                                            <button type="submit" class="btn next-btn">Submit</button>
-                                          </div>
-                                        </div>
-                                      </div>
-
-
-                                  </div>
-                  
-                              </form>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="select-project mb-4">
+                    <form id="post-service">
+                      <div class="title-box widget-box">
+                        <div class="title-content">
+                          <div class="title-detail">
+                            <h3>Service title</h3>
+                            <div class="form-group mb-0">
+                              <input id="title" type="text" class="form-control" placeholder="Enter Service title">
+                            </div>
                           </div>
+                        </div>
+                        <div class="title-content">
+                          <div class="title-detail">
+                            <h3>Category</h3>
+                            <div class="form-group mb-0">
+                              <select class="form-control select" id="category">
+                                <option value="0">--Select category --</option>
+                                <option value="1">Accounting</option>
+                                <option value="2">Cleaning</option>
+                                <option value="3">Plumbing</option>
+                                <option value="4">Fitness</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="title-content">
+                          <div class="title-detail">
+                            <h3>Pricing Type</h3>
+                            <div class="form-group price-cont mb-0" >
+                              <select name="price" class="form-control select" id="price_type">
+                                <option value="0">--Select price type --</option>
+                                <option value="1">Per hour</option>
+                                <option value="2">Per day</option>
+                                <option value="3">Per service</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="title-content">
+                          <div class="title-detail">
+                            <h3>Add picture</h3>
+                            <div class="custom-file">
+                              <input type="file" class="custom-file-input" id="picture">
+                              <label class="custom-file-label"></label>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="title-content pb-0">
+                          <div class="row">
+                            <div class="col-md-12 text-end">
+                              <div class="btn-item">
+                                <button type="button" class="btn next-btn" onClick="postService()">Submit</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
                       </div>
+                      
+                    </form>
                   </div>
+                </div>
               </div>
+            </div>
           </div>
 
           <div id="footer"></div>
