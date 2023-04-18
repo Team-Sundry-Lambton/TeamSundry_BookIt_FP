@@ -26,6 +26,24 @@ if($(window).width() <= 991){
 	// Sidebar Initiate
 	init();
 	}
+
+    // hide inpout box label when data entered
+
+    const inputFields = document.querySelectorAll('input');
+    if (inputFields.length > 0) {
+        inputFields.forEach(function(inputField) {
+            const labelElement = inputField.previousElementSibling || inputField.nextElementSibling;
+
+            inputField.addEventListener('input', function() {
+                if (inputField.value !== '') {
+                labelElement.style.display = 'none';
+                } else {
+                labelElement.style.display = 'inline-block';
+                }
+            });
+        });
+    }
+
     function register() {
 		const isClient = document.getElementById("isClient").value;
         const firstName = document.getElementById("firstName").value;
@@ -51,20 +69,40 @@ if($(window).width() <= 991){
         }
 	} 
 
+    function validateLogin(){
+        const email = document.getElementById('email').value;
+        const password = document.getElementById('password').value;
+        const emailRegex = /\S+@\S+\.\S+/;
+
+        if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return false;
+        }
+
+        if (password.trim() === '') {
+            alert('Please enter a password.');
+            return false;
+        }
+
+        return true;
+    }
+
     function login() {
-        const email = document.getElementById("email").value;
-          const password = document.getElementById("password").value;
-            alert(localStorage.getItem('isClient'));
-          if(email === localStorage.getItem('email')) {
-              if(password === localStorage.getItem('password')) {
-                  var url = localStorage.getItem('isClient') === "true" ? "client-profile.html" : "vendor-profile.html";
-                  window.location.href = url;
-                } else {
-                  alert("Wrong password! Please try again!");
-              }
-          } else {
-              alert("User is not existed! Please try again!");
-          }
+        if (validateLogin()){
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+              //alert(localStorage.getItem('isClient'));
+            if(email === localStorage.getItem('email')) {
+                if(password === localStorage.getItem('password')) {
+                    var url = localStorage.getItem('isClient') === "true" ? "client-profile.html" : "vendor-profile.html";
+                    window.location.href = url;
+                  } else {
+                    alert("Wrong password! Please try again!");
+                }
+            } else {
+                alert("User is not existed! Please try again!");
+            }
+        }
     }
 
     function logout() {
