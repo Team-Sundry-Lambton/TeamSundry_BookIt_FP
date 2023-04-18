@@ -27,23 +27,6 @@ if($(window).width() <= 991){
 	init();
 	}
 
-    // hide inpout box label when data entered
-
-    const inputFields = document.querySelectorAll('input');
-    if (inputFields.length > 0) {
-        inputFields.forEach(function(inputField) {
-            const labelElement = inputField.previousElementSibling || inputField.nextElementSibling;
-
-            inputField.addEventListener('input', function() {
-                if (inputField.value !== '') {
-                labelElement.style.display = 'none';
-                } else {
-                labelElement.style.display = 'inline-block';
-                }
-            });
-        });
-    }
-
     function validateRegister(){
         const firstName = document.getElementById("firstName").value;
         const lastName = document.getElementById("lastName").value;
@@ -215,3 +198,38 @@ if($(window).width() <= 991){
     xhrs.send();
 
     
+    function validatePostService(){
+        const title = document.getElementById('title').value;
+        const category = document.getElementById('category');
+        var categorySelected = category.options[category.selectedIndex].text;
+        const price_type = document.getElementById('price_type');
+        var priceTypeSelected = price_type.options[price_type.selectedIndex].text;
+        if (title.trim() === '') {
+            alert('Please enter a title.');
+            return false;
+        }
+
+        if (categorySelected.trim() === '') {
+            alert('Please select category.');
+            return false;
+        }
+
+        if (priceTypeSelected.trim() === '') {
+            alert('Please select price type.');
+            return false;
+        }
+
+        return true;
+    }
+
+    function postService() {
+        if(validatePostService()){
+            alert('Service was posted! We will review and approve it later.');
+        }
+    }
+
+    if($('.floating').length > 0 ){
+		$('.floating').on('focus blur', function (e) {
+		$(this).parents('.form-focus').toggleClass('focused', (e.type === 'focus' || this.value.length > 0));
+		}).trigger('blur');
+	}
