@@ -1205,7 +1205,7 @@ label {
     -webkit-transition: all 0.3s ease 0s;
     -o-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
-    background-color: transparent;
+    background-color: #ffffff;
 }
 .header {
 	width: 100%;
@@ -1214,7 +1214,7 @@ label {
 	-webkit-transition: all 0.3s ease 0s;
 	-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
-	background-color: transparent;
+	background-color: #ffffff;
 	border: 1px solid #e3e3e3;
 }
 .home-page .header {
