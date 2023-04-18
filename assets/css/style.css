@@ -170,10 +170,7 @@ input[type=password] {
     align-items: stretch;
     width: 100%;
 }
-.dashboard-page .content > .container-fluid {
-	padding-left: 30px;
-	padding-right: 30px;
-}
+
 
 /*-----------------
 	BLOCK Bootstrap Classes
@@ -2783,13 +2780,7 @@ html.menu-opened body header:before {
 	BLOCK Search
 -----------------------*/
 
-.breadcrumb-bar {
-    background: url(../../assets/img/inner-banner.jpg);
-    background-size: cover;
-    padding-top: 84px;
-	background-repeat: no-repeat;
-	min-height: 304px;
-}
+
 .breadcrumb-bar .breadcrumb-title {
     font-weight: bold;
     font-size: 40px;
@@ -2797,7 +2788,7 @@ html.menu-opened body header:before {
     margin-bottom: 15px;
 }
 .bread-crumb-bar {
-	background-color: #FFF5F3;
+	background-color: #cfd9f5;
 	padding-top: 84px;
 }
 .bread-crumb-bar .inner-banner {
@@ -3177,6 +3168,7 @@ label.file-upload.image-btn {
 	align-items: center;
 	margin-bottom: 0;
 }
+
 
 /*-----------------
 	BLOCK Profile
@@ -5806,9 +5798,7 @@ label.file-upload  input[type="file"] {
 	color: #4F639D;
 	text-decoration: underline;
 }
-.chat-page footer {
-	display: none;
-}
+
 .back-text {
 	text-align: right;
 	margin-bottom: 20px;
@@ -6075,14 +6065,6 @@ label.award-upload input[type="file"] {
 	font-weight: 600;
 	font-size: 14px;
 }
-.btn-chat {
-	font-weight: 500;
-	font-size: 12px;
-	color: #4F639D;
-	background: #fff;
-	border: 1px solid #D8D8D8;
-	border-radius: 70px;
-}
 .bg-success-dark {
 	background-color: #4B9F18;
 	border: 1px solid #4B9F18;
@@ -6309,7 +6291,7 @@ label.award-upload input[type="file"] {
     position: relative;
     background-size: cover;
     overflow: hidden;
-	background: #fdfdfd;
+	background: #cfd9f5;
 }
 .footer-user {
     position: absolute;
@@ -6771,13 +6753,6 @@ h2.footer-title:before {
 		-webkit-transform: translateY(20px);
 		-ms-transform: translateY(20px);
 		transform: translateY(20px);
-	}
-}
-
-@media only screen and (max-width: 1399px) {
-	.chat-cont-left .chat-users-list a.media .media-body > div:first-child .user-name, 
-	.chat-cont-left .chat-users-list a.media .media-body > div:first-child .user-last-chat {
-		max-width: 180px;
 	}
 }
 
@@ -7536,45 +7511,6 @@ h2.footer-title:before {
 		width: 100%;
 		margin-bottom: 10px;
 	}
-	.chat-cont-left, .chat-cont-right {
-		-ms-flex: 0 0 100%;
-		flex: 0 0 100%;
-		max-width: 100%;
-		transition: left 0.3s ease-in-out 0s, right 0.3s ease-in-out 0s;
-		width: 100%;
-	}
-	.chat-cont-left {
-		border-right: 0;
-	}
-	.chat-cont-right {
-		position: absolute;
-		right: -100%;
-		top: 0;
-		opacity: 0;
-		visibility: hidden;
-	}
-	.chat-cont-right .chat-header {
-		justify-content: start;
-		-webkit-justify-content: start;
-		-ms-flex-pack: start;
-	}
-	.chat-cont-right .chat-header .back-user-list {
-		display: block;
-	}
-	.chat-cont-right .chat-header .chat-options {
-		margin-left: auto;
-	}
-	.chat-window.chat-slide .chat-cont-left {
-		left: -106%;
-	}
-	.chat-window.chat-slide .chat-cont-right {
-		right: 0;
-		opacity: 1;
-		visibility: visible;
-	}
-	.chat-footer .avatar {
-		display: none;
-	}
 	.plan-details h4 {
 		font-size: 24px;
 	}
@@ -7647,20 +7583,6 @@ h2.footer-title:before {
 	}
 	.bookmark {
 		margin-bottom: 0;
-	}
-	.chat-page .content {
-		padding-top: 80px;
-	}
-	.dashboard-page .content {
-		padding-top: 120px;
-	}
-	.dashboard-page .content-page {
-		padding-top: 60px;
-	}
-	.dashboard-page .content > .container-fluid,
-	.header-nav {
-		padding-left: 15px;
-    	padding-right: 15px;
 	}
 	.header-title {
 		font-size: 24px;
@@ -9341,10 +9263,7 @@ h2.footer-title:before {
 	.category-box .category-img {
 		padding: 7px;
 	}	
-	.chat-cont-left .nav-link {
-		font-size: 10px;
-		padding: 8px;
-	}
+	
 	.plan-details a, .pro-info  .list-details .slot {
 		margin-bottom: 15px;
 	}
@@ -9444,10 +9363,7 @@ h2.footer-title:before {
 	.card-top .dev-text {
 		padding: 5px;
 	}
-	.chat-cont-left .chat-users-list a.media .media-body > div:first-child .user-name, 
-	.chat-cont-left .chat-users-list a.media .media-body > div:first-child .user-last-chat {
-		max-width: 160px;
-	}
+	
 	.section-features, .section-features, .section-specialities {
 		background-color: #fff;
 		padding: 30px 0;
