@@ -177,26 +177,44 @@ if($(window).width() <= 991){
 
     // GENERATE HEADER
     const headerContainer = document.getElementById("header-container");
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-        headerContainer.innerHTML = xhr.responseText;
-        }
-    };
-    xhr.open("GET", "common/header.html", true);
-    xhr.send();
+    if(headerContainer){
+        const xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            headerContainer.innerHTML = xhr.responseText;
+            }
+        };
+        xhr.open("GET", "common/header.html", true);
+        xhr.send();
+    }
+    
 
     // GENERATE FOOTER
     const footer = document.getElementById("footer");
-    const xhrs = new XMLHttpRequest();
-    xhrs.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            footer.innerHTML = xhrs.responseText;
-        }
-    };
-    xhrs.open("GET", "common/footer.html", true);
-    xhrs.send();
+    if(footer){
+        const xhrs = new XMLHttpRequest();
+        xhrs.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                footer.innerHTML = xhrs.responseText;
+            }
+        };
+        xhrs.open("GET", "common/footer.html", true);
+        xhrs.send();
+    }
 
+    // GENERATE LEFT MENU
+    const leftMenu = document.getElementById("left-menu");
+    if(leftMenu){
+        const xhrsw = new XMLHttpRequest();
+        xhrsw.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                footer.innerHTML = xhrsw.responseText;
+            }
+        };
+        var url = localStorage.getItem('isClient') === "true"? "common/left-menu-client.html" : "common/left-menu-vendor.html";
+        xhrsw.open("GET", url, true);
+        xhrsw.send();
+    }
     
     function validatePostService(){
         const title = document.getElementById('title').value;
@@ -262,5 +280,5 @@ if($(window).width() <= 991){
         if(validateContactForm()){
             alert("Thank you for contacting us! We\'ll get back to you soon! ");
         }
-    }
+    }      
 
