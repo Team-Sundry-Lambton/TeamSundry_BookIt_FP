@@ -300,5 +300,12 @@ if($(window).width() <= 991){
         if(validateContactForm()){
             alert("Thank you for contacting us! We\'ll get back to you soon! ");
         }
-    }      
+    }
+    
+    if($('.course-count .counter-up').length > 0) {
+		$('.course-count .counter-up').counterUp({
+            delay: 15,
+            time: 1500
+        });
+	}
 
